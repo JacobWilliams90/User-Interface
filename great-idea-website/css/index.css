@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5 {
 .container {
 	max-width: 876px;
 	margin: 0 auto;
+	
 }
 
 .container header nav a {
@@ -100,6 +101,19 @@ h1, h2, h3, h4, h5 {
 	margin: 10px;
 	border: 1px solid black;
 	background: white;
+	animation: slidein 3s ease-in 1s both running;
+}
+
+@keyframes slidein {
+	from {
+	  margin-left: 600%;
+	  width: 150%; 
+	}
+	  
+	to {
+	  margin-left: 0%;
+	  width: 55%;
+	}
 }
 
 img.round {
